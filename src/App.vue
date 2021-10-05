@@ -3,7 +3,12 @@
     <div>
       <li>
         <u>
-          <router-link to="/">Home</router-link>
+          <router-link to="/#Home1">Home 1 router</router-link>
+        </u>
+      </li>
+      <li>
+        <u>
+          <router-link to="/#Home2">Home 2 router</router-link>
         </u>
       </li>
       <li>
@@ -13,14 +18,16 @@
       </li>
       <li>
         <u>
-          <router-link to="/parent/parent-nest-custom-one/true">Parent</router-link>
+          <router-link to="/parent/parent-nest-custom-one/true/#p1"
+            >Parent</router-link
+          >
         </u>
       </li>
-      <!-- <li>
+      <li>
         <u>
-         {{ $route.query }}
+          {{ $route.query }}
         </u>
-      </li> -->
+      </li>
     </div>
   </div>
 

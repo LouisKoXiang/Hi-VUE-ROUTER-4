@@ -41,6 +41,21 @@ const routes: Array<RouteRecordRaw> = [
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
+  scrollBehavior (to, from, SavedPosition) {
+    if (SavedPosition) {
+      return SavedPosition
+    }
+    if (to.hash) {
+      const getHash: string | null = window.location.href.split('#')[1]
+      const el: HTMLElement | null = document.getElementById(getHash)
+      if (el) {
+        return window.scrollTo({
+          top: el.offsetTop,
+          behavior: 'smooth'
+        })
+      }
+    }
+  },
   routes
 })
 

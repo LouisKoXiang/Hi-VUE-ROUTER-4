@@ -6,10 +6,24 @@
         <router-link
           :to="{
             name: bindName,
+            hash: '#p1',
             params: { title: '案件資訊', caseType: $route.params.caseType }
           }"
         >
           ParentNestCustomOne
+        </router-link>
+      </u>
+    </li>
+    <li>
+      <u>
+        <router-link
+          :to="{
+            name: bindName,
+            hash: '#p2',
+            params: { title: '案件資訊', caseType: $route.params.caseType }
+          }"
+        >
+          ParentNestCustomOne P2
         </router-link>
       </u>
     </li>
@@ -37,7 +51,12 @@
         </router-link>
       </u>
     </li>
-    <router-view></router-view>
+    <router-view v-slot="{ Component }">
+      <transition name="fade-transform" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
+    <!-- <router-view></router-view> -->
   </div>
 </template>
 
@@ -57,3 +76,20 @@ export default defineComponent({
   }
 })
 </script>
+
+<style lang="css" scoped>
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all 0.5s;
+}
+
+.fade-transform-enter {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+</style>
