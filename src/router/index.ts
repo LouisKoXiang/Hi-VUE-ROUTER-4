@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import { ref } from 'vue'
 import Home from '../views/Home.vue'
 
 const routes: Array<RouteRecordRaw> = [
@@ -43,20 +44,25 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   scrollBehavior (to, from, SavedPosition) {
     if (SavedPosition) {
+      console.log('SavePositon', SavedPosition)
       return SavedPosition
     }
-    if (to.hash) {
-      const getHash: string | null = window.location.href.split('#')[1]
-      const el: HTMLElement | null = document.getElementById(getHash)
-      if (el) {
-        return window.scrollTo({
-          top: el.offsetTop,
-          behavior: 'smooth'
-        })
-      }
-    }
+    // if (to.hash) {
+    //   const getHash: string | null = window.location.href.split('#')[1]
+    //   const el: HTMLElement | null = document.getElementById(getHash)
+    //   if (el) {
+    //     return window.scrollTo({
+    //       top: el.offsetTop,
+    //       behavior: 'smooth'
+    //     })
+    //   }
+  //   }
   },
   routes
 })
 
 export default router
+export const routeViewKey = ref(Math.random().toString())
+export const reloadRouteView = () => {
+  routeViewKey.value = Math.random().toString()
+}
