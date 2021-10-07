@@ -5,5 +5,5 @@ import router from './router'
 import store from './store'
 import { initScrollToHash } from './scroll-to-hash'
 
-initScrollToHash(router)
+// initScrollToHash(router)
 createApp(App).use(store).use(router).mount('#app')

@@ -1,7 +1,8 @@
 // VueRouter scrollBehavior does not work, so use this file
 import * as VueRouter from 'vue-router'
 import { nextTick } from 'vue'
-import * as hp from 'helper-js'
+// import * as hp from 'helper-js'
+import smoothscroll from 'smoothscroll-polyfill'
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export function initScrollToHash (router: VueRouter.Router) {
@@ -29,15 +30,11 @@ export function initScrollToHash (router: VueRouter.Router) {
           window.history.scrollRestoration = 'manual'
         }
         setTimeout(() => {
-        //   el.scrollIntoView && el.scrollIntoView()
-          // eslint-disable-next-line no-unused-expressions
-          // eslint-disable-next-line eqeqeq
-          window.onunload = function () {
-            window.scrollTo({
-              top: el.offsetTop,
-              behavior: 'smooth'
-            })
-          }
+          smoothscroll.polyfill()
+          window.scrollTo({
+            top: el.offsetTop,
+            behavior: 'smooth'
+          })
         }, 200)
       })
     //   })
