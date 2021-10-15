@@ -4,10 +4,19 @@ Vue2 -> Vue3 Sample
 
 1. option api -> composition api
 2. vue-router3 -> vue-router4
-3. vee-validate 3.0 -> vee-validate 4.0
+3. vee-validate 3.0 -> vee-validat4.0
 4. vuex 3.0 -> 4.0
 5. Vue2 Instal -> Vue3 mount
-6. ...
+6. smoothscroll-polyfill (compatibility Safari)
+7. 
+
+- [5] Vue2 Instal -> Vue3 Mount Global Component
+  ```bash
+   /src/routerBeforeEach.ts
+   #import mountDialog from './plugin/dialog'
+   #mountDialog({ type: 'error', content: 'errorMessage' })
+   註解拿掉即可檢視全局component
+  ```
 
 
 ## Project setup

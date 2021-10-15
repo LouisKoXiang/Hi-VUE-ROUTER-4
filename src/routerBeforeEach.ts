@@ -1,8 +1,8 @@
 import router from './router'
-import mountDialog from './plugin/dialog'
+// import mountDialog from './plugin/dialog'
 
 router.beforeEach((to, from, next) => {
-  mountDialog({ title: 'error', content: 'errorMessage' })
+  // mountDialog({ type: 'error', content: 'errorMessage' })
   // to and from are both route objects.
   console.log('beforeEachStart')
   next()

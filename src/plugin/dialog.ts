@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import dialog from './dialog.vue'
 
 interface Option{
-  title?: string;
+  type?: string;
   content?: string;
 }
 

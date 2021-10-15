@@ -24,7 +24,8 @@ import { useField } from 'vee-validate'
 export default defineComponent({
   name: 'ncs',
   setup () {
-    const isRequired = (value: string) => {
+    // eslint-disable-next-line
+    const isRequired = (value: any) => {
       if (value && value.trim()) {
         return true
       }
