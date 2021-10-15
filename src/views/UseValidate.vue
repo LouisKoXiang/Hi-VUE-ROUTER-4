@@ -12,13 +12,13 @@
       <span v-if="errorMessage" class="text-red-500">{{ errorMessage }}</span>
     </div>
     <div>
-      <button @click="handleValidateClick">123</button>
+      <button @click="handleValidateClick">Go Validate</button>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
+import { defineComponent } from 'vue'
 import { useField } from 'vee-validate'
 
 export default defineComponent({
