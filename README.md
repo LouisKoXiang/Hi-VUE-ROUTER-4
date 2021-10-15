@@ -1,4 +1,14 @@
-# HI-VUE-ROUTER-4
+# HI-VUE3
+
+Vue2 -> Vue3 Sample
+
+1. option api -> composition api
+2. vue-router3 -> vue-router4
+3. vee-validate 3.0 -> vee-validate 4.0
+4. vuex 3.0 -> 4.0
+5. Vue2 Instal -> Vue3 mount
+6. ...
+
 
 ## Project setup
 ```
