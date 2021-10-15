@@ -34,7 +34,7 @@ export default defineComponent({
   },
   setup () {
     const temp = ref('')
-    const getTest = (meta:any) => {
+    const getTest = (meta: string) => {
       console.log(meta)
     }
     return {

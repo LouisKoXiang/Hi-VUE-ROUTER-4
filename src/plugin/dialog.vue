@@ -18,11 +18,11 @@ export default defineComponent({
     },
     content: {
       type: String,
-      default: '暂无权限'
+      default: '訊息不明'
     },
-    title: {
+    type: {
       type: String,
-      default: '提示'
+      default: 'error'
     }
   },
   setup (props) {

@@ -2,11 +2,12 @@ import router from './router'
 import mountDialog from './plugin/dialog'
 
 router.beforeEach((to, from, next) => {
-  // mountDialog({ title: 'test', content: '自定义内容' })
-  console.log('自定义标题')// to and from are both route objects.
+  mountDialog({ title: 'error', content: 'errorMessage' })
+  // to and from are both route objects.
+  console.log('beforeEachStart')
   next()
 })
 
-router.afterEach((to, from) => {
-  console.log('bye')// to and from are both route objects.
+router.afterEach(() => {
+  console.log('afterEach')// to and from are both route objects.
 })

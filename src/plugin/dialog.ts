@@ -1,7 +1,5 @@
 import { createApp } from 'vue'
 import dialog from './dialog.vue'
-// import ElementPlus from 'element-plus'
-// import 'element-plus/lib/theme-chalk/index.css'
 
 interface Option{
   title?: string;
