@@ -14,6 +14,16 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
+    path: '/validate',
+    name: 'Validate',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Validate.vue')
+  },
+  {
+    path: '/use-validate',
+    name: 'UseValidate',
+    component: () => import(/* webpackChunkName: "about" */ '../views/UseValidate.vue')
+  },
+  {
     path: '/parent/:caseType/:isEdit',
     name: 'Parent',
     // route level code-splitting

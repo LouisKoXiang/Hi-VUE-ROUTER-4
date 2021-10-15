@@ -18,6 +18,16 @@
       </li>
       <li>
         <u>
+          <router-link to="/validate">Validate</router-link>
+        </u>
+      </li>
+      <li>
+        <u>
+          <router-link to="/use-validate">Use-Validate</router-link>
+        </u>
+      </li>
+      <li>
+        <u>
           <router-link to="/parent/parent-nest-custom-one/true/#p1"
             >Parent</router-link
           >
