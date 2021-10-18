@@ -18,6 +18,11 @@
       </li>
       <li>
         <u>
+          <router-link to="/pdf">Pdf</router-link>
+        </u>
+      </li>
+      <li>
+        <u>
           <router-link to="/validate">Validate</router-link>
         </u>
       </li>
