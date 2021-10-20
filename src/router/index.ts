@@ -19,6 +19,16 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import(/* webpackChunkName: "about" */ '../views/Pdf.vue')
   },
   {
+    path: '/pdf-dist',
+    name: 'PdfDist',
+    component: () => import(/* webpackChunkName: "about" */ '../views/PdfDist.vue')
+  },
+  {
+    path: '/pdf-dist-2',
+    name: 'PdfDist2',
+    component: () => import(/* webpackChunkName: "about" */ '../views/PdfDist2.vue')
+  },
+  {
     path: '/validate',
     name: 'Validate',
     component: () => import(/* webpackChunkName: "about" */ '../views/Validate.vue')

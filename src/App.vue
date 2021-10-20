@@ -23,6 +23,16 @@
       </li>
       <li>
         <u>
+          <router-link to="/pdf-dist">Pdf-Dist</router-link>
+        </u>
+      </li>
+      <li>
+        <u>
+          <router-link to="/pdf-dist-2">Pdf-Dist-2</router-link>
+        </u>
+      </li>
+      <li>
+        <u>
           <router-link to="/validate">Validate</router-link>
         </u>
       </li>
