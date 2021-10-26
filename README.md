@@ -8,6 +8,7 @@ Vue2 -> Vue3 Sample With TypeScript
 4. vuex 3.0 -> 4.0
 5. Vue2 Instal -> Vue3 mount
 6. smoothscroll-polyfill (compatibility Safari)
+7. Pdf.js Pdf-dist.js ( Html Object Tag With Pdf)
 
 
 - [2] vue-router4 sample
