@@ -1,0 +1,52 @@
+{
+  "info": [
+    {
+      "isBundle": true,
+      "class": 1,
+      "className": "一段式",
+      "name": "Louis",
+      "address": "taipei"
+    },
+    {
+      "isBundle": true,
+      "class": 2,
+      "className": "二段式",
+      "name": "Louis",
+      "address": "taipe-1"
+    },
+    {
+      "isBundle": true,
+      "class": 2,
+      "className": "二段式",
+      "name": "Louis",
+      "address": "taipei-2"
+    },
+    {
+      "isBundle": false,
+      "class": 1,
+      "name": "Ibm",
+      "address": "keelung"
+    },
+    {
+      "isBundle": false,
+      "class": 3,
+      "className": "三段式",
+      "name": "Ibm",
+      "address": "keelung-1"
+    },
+    {
+      "isBundle": false,
+      "class": 3,
+      "className": "三段式",
+      "name": "Ibm",
+      "address": "keelung-2"
+    },
+    {
+      "isBundle": false,
+      "class": 3,
+      "name": "Ibm",
+      "address": "keelung-3"
+    }
+  ],
+  "rates": []
+}

@@ -2,6 +2,9 @@
   <div id="nav">
     <div style="display:flex">
       <div style="margin-right: 10px">
+        <router-link to="/typescript-test">typescript</router-link>
+      </div>
+      <div style="margin-right: 10px">
         <router-link to="/#Home1">Home 1 router</router-link>
       </div>
       <div style="margin-right: 10px">

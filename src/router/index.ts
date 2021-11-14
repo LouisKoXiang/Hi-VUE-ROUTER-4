@@ -39,6 +39,11 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import(/* webpackChunkName: "about" */ '../views/UseValidate.vue')
   },
   {
+    path: '/typescript-test',
+    name: 'typescript-test',
+    component: () => import(/* webpackChunkName: "about" */ '../views/TypeSctiptTest.vue')
+  },
+  {
     path: '/parent/:caseType/:isEdit',
     name: 'Parent',
     // route level code-splitting
