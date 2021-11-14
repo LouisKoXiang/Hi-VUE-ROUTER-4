@@ -1,53 +1,35 @@
 <template>
   <div id="nav">
-    <div>
-      <li>
-        <u>
-          <router-link to="/#Home1">Home 1 router</router-link>
-        </u>
-      </li>
-      <li>
-        <u>
-          <router-link to="/#Home2">Home 2 router</router-link>
-        </u>
-      </li>
-      <li>
-        <u>
-          <router-link to="/about">About</router-link>
-        </u>
-      </li>
-      <li>
-        <u>
-          <router-link to="/pdf">Pdf</router-link>
-        </u>
-      </li>
-      <li>
-        <u>
-          <router-link to="/pdf-dist">Pdf-Dist</router-link>
-        </u>
-      </li>
-      <li>
-        <u>
-          <router-link to="/pdf-dist-2">Pdf-Dist-2</router-link>
-        </u>
-      </li>
-      <li>
-        <u>
-          <router-link to="/validate">Validate</router-link>
-        </u>
-      </li>
-      <li>
-        <u>
-          <router-link to="/use-validate">Use-Validate</router-link>
-        </u>
-      </li>
-      <li>
-        <u>
-          <router-link to="/parent/parent-nest-custom-one/true/#p1"
-            >Parent</router-link
-          >
-        </u>
-      </li>
+    <div style="display:flex">
+      <div style="margin-right: 10px">
+        <router-link to="/#Home1">Home 1 router</router-link>
+      </div>
+      <div style="margin-right: 10px">
+        <router-link to="/#Home2">Home 2 router</router-link>
+      </div>
+      <div style="margin-right: 10px">
+        <router-link to="/about">About</router-link>
+      </div>
+      <div style="margin-right: 10px">
+        <router-link to="/pdf">Pdf</router-link>
+      </div>
+      <div style="margin-right: 10px">
+        <router-link to="/pdf-dist">Pdf-Dist</router-link>
+      </div>
+      <div style="margin-right: 10px">
+        <router-link to="/pdf-dist-2">Pdf-Dist-2</router-link>
+      </div>
+      <div style="margin-right: 10px">
+        <router-link to="/validate">Validate</router-link>
+      </div>
+      <div style="margin-right: 10px">
+        <router-link to="/use-validate">Use-Validate</router-link>
+      </div>
+      <div style="margin-right: 10px">
+        <router-link to="/parent/parent-nest-custom-one/true/#p1"
+          >Parent</router-link
+        >
+      </div>
       <li>
         <u>
           {{ $route.query }}
