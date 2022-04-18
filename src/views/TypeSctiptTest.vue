@@ -8,7 +8,7 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
-import { OrderList, Option, Info } from '@/model/tstest'
+import { Info } from '@/model/tstest'
 import axios from 'axios'
 const request = axios.create({
   baseURL: 'http://localhost:5500'
